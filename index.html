@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Akaya+Kanadaka&family=Alkatra:wght@400..700&family=Audiowide&family=Bokor&family=Bree+Serif&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cookie&family=DynaPuff:wght@400..700&family=Eagle+Lake&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Great+Vibes&family=Lexend+Giga:wght@100..900&family=Madimi+One&family=Nanum+Myeongjo&family=Notable&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Silkscreen:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+
+
+	<title>Q4 QUIZ 1: BMI CALCULATOR</title>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-6 text-center" id="pic">
+				<img src="bmi.png">
+			</div>
+
+			<div class="col-md-6" id="calculator">
+
+				<br>
+				<h1>BMI Calculator</h1>
+
+				<br>
+
+				<p>BMI (Body Mass Index) is a numerical value that estimates a person's body fat based on their weight and height. It is calculated by dividing a person's weight in kilograms by the square of their height in meters (kg/m²). BMI is commonly used to categorize individuals into different weight status groups, such as underweight, normal weight, overweight, or obese. While it’s a useful general guideline, BMI does not directly measure body fat and may not accurately reflect health in all individuals, especially athletes or those with high muscle mass.</p>
+
+				<br>
+
+				<details>
+					<summary>Instructions</summary>
+					<i>Fill in the form bellow</i>
+				</details>
+
+				<br>
+
+				<form>
+					<label for="avalue">Weight in kilograms: </label>
+					<br>
+					<input type="text" name="avalue" id="weight" class="form-control">
+
+					<br>
+
+					<label for="bvalue">Height in  meters: </label>
+					<br>
+					<input type="text" name="bvalue" id="height" class="form-control">
+
+					<br>
+
+					<button type="button" onclick="BMI()" class="btn btn-outline-dark bg-light w-100">
+							Calculate the BMI
+					</button>
+
+					<br>
+
+					<button type="button" onClick="window.location.reload()" class="btn bg-light btn-outline-dark d-inline-block w-100">
+						Refresh
+				</button>
+				<br>
+			</div>
+				</form>
+			</div>
+
+			<h5 id="calculate">BMI:</h5>
+
+			<footer>
+				<hr><p>&#169;2025 | ICT 9-Topaz | Martina Cajucom | Excercise 4</p>
+			</footer>
+		</div>
+
+		<br>
+			
+
+		
+
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
